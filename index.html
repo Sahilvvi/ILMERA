@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ILMERA - Elevate Your Skills</title>
+  <link rel="icon" type="image/png" href="ilmera.png">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+  <!-- Peloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Navbar Placeholder -->
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- LEFT CONTENT -->
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+      <h1>
+        Elevate your Skills <br>
+        with our <span class="highlight" id="typewriter">Experts</span><span class="cursor">|</span>
+      </h1>
+      <p class="hero-sub">
+        Master the latest skills in technology, business, and design with our world-class courses and expert-led
+        training sessions.
+      </p>
+      <button class="cta-btn">Explore courses</button>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="1200">
+      <img src="hero.png" alt="Students" class="students-img">
+
+      <!-- Decorative floating icons -->
+      <img src="sun.png" class="icon sun" alt="">
+      <img src="book.png" class="icon book" alt="">
+      <img src="bag.png" class="icon sticker" alt="">
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Trusted Partners Section (New) -->
+  <section class="partners-section">
+    <div class="container text-center">
+      <p class="section-subtitle">TRUSTED BY TOP COMPANIES</p>
+      <div class="partners-grid" data-aos="fade-up">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png"
+          alt="Microsoft">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features container" data-aos="fade-up" data-aos-offset="100">
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-layer-group"></i>
+      </div>
+      <h3>Learn The Latest Skills</h3>
+      <p class="para">Stay ahead with cutting-edge curriculum designed by industry experts.</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <h3>Get Ready For a Career</h3>
+      <p class="para">Build a portfolio and get job-ready with real-world projects.</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-certificate"></i>
+      </div>
+      <h3>Earn a Certificate</h3>
+      <p class="para">Gain recognition with certificates valued by top employers.</p>
+    </div>
+  </section>
+
+  <!-- Popular Courses Section -->
+  <section class="popular" data-aos="fade-up" data-aos-offset="200">
+    <h2 class="title">Popular Courses <span class="underline"></span></h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active">All Programme</button>
+      <button class="tab">UI/UX Design</button>
+      <button class="tab">Program Design</button>
+      <button class="tab">Python</button>
+    </div>
+
+    <!-- Course Cards -->
+    <div class="course-grid">
+      <div class="course-gridss" id="slider" style="display: flex; gap: 30px;">
+        <div class="course-card">
+          <img alt="" class="course-img" src="courses_1.png" />
+          <div class="card-badge">Bestseller</div>
+          <div class="course-info">
+            <span class="course-date">1 – 28 July 2022</span>
+            <h3 class="course-title">Product Management Basic</h3>
+            <p class="desc">Master the fundamentals of product management with industry leaders.</p>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img alt="" class="course-img" src="courses_2.png" />
+          <div class="card-badge">New</div>
+          <div class="course-info">
+            <span class="course-date">1 – 28 July 2022</span>
+            <h3 class="course-title">IBM Data Science Professional</h3>
+            <p class="desc">Kickstart your career in data science with this comprehensive certificate.</p>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img alt="" class="course-img" src="courses_3.png" />
+          <div class="card-badge">Popular</div>
+          <div class="course-info">
+            <span class="course-date">1 – 28 July 2022</span>
+            <h3 class="course-title">The Science of Well-Being</h3>
+            <p class="desc">Explore the psychological science of happiness and well-being.</p>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img alt="" class="course-img" src="courses_4.png" />
+          <div class="card-badge">Featured</div>
+          <div class="course-info">
+            <span class="course-date">1 – 28 July 2022</span>
+            <h3 class="course-title">Python for Everybody</h3>
+            <p class="desc">Learn to program and analyze data with Python from scratch.</p>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <button class="see-all">See all Courses</button>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2 class="title" data-aos="fade-up">How It Works <span class="underline"></span></h2>
+
+    <div class="steps-container">
+      <div class="step" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-icon-circle"><img src="sign_up.png" alt="Sign Up" /></div>
+        <p class="step-title">Sign Up</p>
+      </div>
+
+      <div class="step-arrow"><img src="sign_arrow.png" alt="arrow"></div>
+
+      <div class="step" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-icon-circle"><img src="choose_course.png" alt="Choose Courses" /></div>
+        <p class="step-title">Choose Courses</p>
+      </div>
+
+      <div class="step-arrow"><img src="choose_arrow.png" alt="arrow"></div>
+
+      <div class="step" data-aos="fade-up" data-aos-delay="400">
+        <div class="step-icon-circle"><img src="start_learning.png" alt="Start Learning" /></div>
+        <p class="step-title">Start Learning</p>
+      </div>
+
+      <div class="step-arrow"><img src="sign_arrow.png" alt="arrow"></div>
+
+      <div class="step" data-aos="fade-up" data-aos-delay="600">
+        <div class="step-icon-circle"><img src="earn_certificate.png" alt="Earn Certificates" /></div>
+        <p class="step-title">Earn Certificates</p>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Testimonials Section (New) -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <h2>Success Stories</h2>
+        <p>Hear from our students who achieved their dreams.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"This platform changed my career trajectory. The courses are practical and the instructors are
+              world-class."</p>
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="user-img">
+              <div>
+                <h5>Sarah Johnson</h5>
+                <span>UX Designer @ Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"I went from zero coding knowledge to a full-stack developer in 6 months. Highly recommend!"</p>
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-img">
+              <div>
+                <h5>Mark Stevens</h5>
+                <span>Developer @ Amazon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"The community is amazing. Whenever I got stuck, there was always someone to help me out."</p>
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="user-img">
+              <div>
+                <h5>Emily Clark</h5>
+                <span>Product Manager @ Meta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Section -->
+  <div class="banner-section" data-aos="zoom-in" data-aos-offset="300">
+    <div class="banner-content">
+      <h4>PROVIDING AMAZING</h4>
+      <h1>Education WordPress Theme</h1>
+      <p>The next level of LMS learning. Learn anytime and anywhere.</p>
+      <button class="banner-btn">Explore Course</button>
+    </div>
+  </div>
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="blog-header" data-aos="fade-down">
+      <h2>Latest Blogs</h2>
+      <p>Insights and articles from our experts.</p>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="0">
+        <img src="blogs_2.png" class="blog-img">
+        <h3 class="blog-name">Effective Study Habits</h3>
+        <p class="blog-text">Discover the techniques that can help you learn faster and retain more information.</p>
+        <div class="card-footer">
+          <a href="#" class="see-more">Read More</a>
+          <div class="icons">
+            <i class="fa-brands fa-instagram" style="color:#0099ff;"></i>
+            <i class="fa-brands fa-linkedin" style="color:#0099ff;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="blogs_2.png" class="blog-img">
+        <h3 class="blog-name">Future of EdTech</h3>
+        <p class="blog-text">How technology is shaping the future of education and remote learning.</p>
+        <div class="card-footer">
+          <a href="#" class="see-more">Read More</a>
+          <div class="icons">
+            <i class="fa-brands fa-instagram" style="color:#0099ff;"></i>
+            <i class="fa-brands fa-linkedin" style="color:#0099ff;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="blogs_3.png" class="blog-img">
+        <h3 class="blog-name">Career Growth 101</h3>
+        <p class="blog-text">Tips and tricks to accelerate your career path in the modern tech industry.</p>
+        <div class="card-footer">
+          <a href="#" class="see-more">Read More</a>
+          <div class="icons">
+            <i class="fa-brands fa-instagram" style="color:#0099ff;"></i>
+            <i class="fa-brands fa-linkedin" style="color:#0099ff;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="community-section">
+    <div class="split-content">
+      <div class="text-area" data-aos="fade-right">
+        <h2>Start growing with our<br> community</h2>
+        <p>Join thousands of learners and experts to share knowledge and grow together.</p>
+        <button class="join-btn">Join Community</button>
+      </div>
+
+      <div class="float-images" data-aos="fade-left">
+        <img src="start_growing.png" class="main-img">
+        <div class="avatar a1"></div>
+        <div class="avatar a2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-grid-img" data-aos="fade-right">
+      <div class="about-col-1">
+        <img src="f_1.png" class="about-img" alt="">
+      </div>
+      <div class="about-col-2">
+        <img src="f_2.png" class="about-img" alt="">
+      </div>
+    </div>
+
+    <div class="text-area" data-aos="fade-left">
+      <span class="sub">WHO WE ARE</span>
+      <h2 class="title" style="text-align:left;">About Us</h2>
+      <p>
+        We are dedicated to providing the best online learning experience. Our mission is to democratize education and
+        make high-quality learning accessible to everyone, everywhere.
+      </p>
+      <button class="join-btn" style="background:#0099ff;">Explore More</button>
+    </div>
+  </section>
+
+  <!-- Footer Placeholder -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      once: false, // Animation runs every time you scroll
+      mirror: true,
+      duration: 1000,
+      offset: 120,
+    });
+
+    // Dynamic Header Loading
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
+        const scriptContent = doc.querySelector('script').textContent;
+        eval(scriptContent);
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+
+    // Slider Logic (Refined)
+    const slider = document.getElementById("slider");
+    if (slider) {
+      // Clone for infinite loop
+      slider.innerHTML += slider.innerHTML;
+
+      let position = 0;
+      let speed = 1;
+
+      function autoScroll() {
+        position += speed;
+        // Reset logic
+        if (position >= slider.scrollWidth / 2) {
+          position = 0;
+        }
+        slider.style.transform = `translateX(${-position}px)`;
+        requestAnimationFrame(autoScroll);
+      }
+      autoScroll();
+    }
+  </script>
+</body>
+
+</html>

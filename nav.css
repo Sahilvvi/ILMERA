@@ -1,0 +1,81 @@
+/* Navbar Glassmorphism */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    padding: 15px 40px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar.scrolled {
+    padding: 10px 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Animation */
+.navbar-brand img {
+    height: 55px;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.navbar-brand:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    color: #1a2b5f !important;
+    /* Premium Dark Blue */
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0099ff !important;
+}
+
+/* Elegant Underline */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #0099ff, #00d4ff);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+    .navbar-nav {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}

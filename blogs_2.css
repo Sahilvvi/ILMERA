@@ -1,0 +1,386 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* header wrapper */
+.main-header {
+  border-bottom: 1px solid #e6e6e6;   /* thin grey line */
+  background: #ffffff;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 60px 16px;
+  position: relative;                /* for centering nav */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo img {
+  height: 60px;     /* adjust to match your logo size */
+  display: block;
+}
+
+/* center nav */
+.nav-left img{
+  margin-right:60px;
+}
+.nav-center {
+  margin-left:60px;
+  gap:90px;
+}
+.main-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);   /* exactly center menu */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 90px;                      /* spacing between words */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.nav-menu a.active {
+  color: #0096e6;                 /* blue active link */
+}
+
+.nav-menu a:hover {
+  color: #0096e6;
+}
+
+/* register button */
+.nav-cta .btn-register {
+  display: inline-block;
+  padding: 11px 32px;
+  background: #0096e6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;           /* pill shape */
+  font-size: 15px;
+  font-weight: 600;
+}
+.blog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;     /* optional: smooth corners */
+    margin-top: 20px;       /* optional: spacing above image */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Two-column layout */
+.blog-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  gap: 96px;               /* distance between left and right columns */
+}
+
+/* ========= LEFT ARTICLE ========= */
+
+.article {
+  flex: 3;
+}
+
+/* Tag pill */
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #f3ecff;
+  color: #4f3df5;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.tag-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #5b3df5;
+}
+
+/* Title + meta */
+.article-title {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 32px;
+}
+
+/* Section heading */
+.section-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Paragraphs */
+.article p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.link-like {
+  color: #3056ff;
+  text-decoration: underline;
+}
+
+.article strong {
+  font-weight: 700;
+}
+
+/* ========= RIGHT SIDEBAR ========= */
+
+.sidebar {
+  flex: 1.5;
+  font-size: 14px;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Accent line + list next to it */
+.sidebar-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* BLUE LINE */
+.sidebar-accent {
+  width: 3px;
+  background: #3056ff;
+  border-radius: 999px;
+  height: auto;
+  min-height: 20px;   /* 🔥 This ensures it ALWAYS appears */
+}
+
+/* List styling – this is where line-gap is controlled */
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;             /* vertical space between items */
+}
+
+.sidebar-list li {
+  color: #222222;
+  line-height: 1.5;          /* tighter line spacing like screenshot */
+}
+
+/* first item highlighted */
+.sidebar-list li.active {
+  color: #0f35e1;
+  font-weight: 650;
+}
+
+/* responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .blog-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px 40px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* main two-column layout: left text + empty right space */
+.blog-layout {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+}
+
+/* LEFT COLUMN (text) */
+.article-left {
+  flex: 0 0 60%;          /* 60% width for text */
+  padding-right: 40px;    /* little gap before empty space */
+}
+
+.section-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.article-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.text-link {
+  color: #3056ff;         /* blue link text */
+  text-decoration: underline;
+}
+
+.article-left strong {
+  font-weight: 700;
+}
+
+/* RIGHT COLUMN (empty white space) */
+.empty-right {
+  flex: 1;                /* takes remaining width, stays blank */
+}
+
+/* small-screen: stack */
+@media (max-width: 900px) {
+  .blog-layout {
+    flex-direction: column;
+    padding: 0 20px 40px;
+  }
+
+  .article-left {
+    flex: 1;
+    padding-right: 0;
+  }
+}
+.site-footer {
+  text-align: center;
+  padding: 30px 40px 0;
+  background: #ffffff;
+  position: relative;
+}
+
+/* logo at top centre */
+.footer-logo img {
+  max-width: 230px;          /* change if your logo is bigger/smaller */
+  display: block;
+  margin: 0 auto 25px;
+}
+
+/* menu links */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 25px 0 20px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* paragraph text */
+.footer-text {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* ===== BOTTOM BLUE SHAPES + ICONS ===== */
+
+.footer-bottom {
+  position: relative;
+  margin-top: 20px;
+  height: 80px;              /* height of the whole bottom area */
+}
+
+/* left and right blue bars */
+.footer-bottom::before,
+.footer-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40%;                /* controls bar width */
+  height: 60px;              /* height of blue bar */
+  background: #0096e6;       /* blue colour */
+}
+
+.footer-bottom::before {
+  left: 0;
+  border-top-right-radius: 80px;
+}
+
+.footer-bottom::after {
+  right: 0;
+  border-top-left-radius: 80px;
+}
+
+/* social icons in the white gap */
+.footer-social {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18px;                 /* move up/down to match screenshot */
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+}
+
+.footer-social a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* thin grey line at very bottom */
+.site-footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, #cfcfcf, transparent);
+}
+
+
+
