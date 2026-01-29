@@ -1010,7 +1010,8 @@ body {
     .a1,
     .a2,
     .f1,
-    .f2 {
+    .f2,
+    .icon {
         display: none;
         /* Hide decorative floating elements on tablets/mobile to prevent overflow */
     }
