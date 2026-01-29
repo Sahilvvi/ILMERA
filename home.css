@@ -937,8 +937,11 @@ body {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 120px;
+        padding: 100px 5% 60px;
+        /* Adjusted padding */
         justify-content: center;
+        min-height: auto;
+        /* Allow height to adjust */
     }
 
     .hero-left,
@@ -948,12 +951,25 @@ body {
     }
 
     .hero-left h1 {
-        font-size: 42px;
+        font-size: 36px;
+        /* Smaller font on mobile */
+        margin-bottom: 20px;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 
     .hero-right {
-        margin-top: 60px;
+        margin-top: 40px;
         justify-content: center;
+    }
+
+    .students-img {
+        max-width: 80%;
+        /* Prevent image from being too large */
+        margin: 0 auto;
     }
 
     .features {
