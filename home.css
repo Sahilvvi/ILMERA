@@ -592,6 +592,8 @@ body {
 }
 
 .main-img {
+    width: 100%;
+    max-width: 500px;
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
@@ -1087,6 +1089,10 @@ body {
     .about-section .title {
         text-align: center !important;
     }
+
+    .community-btns {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1114,5 +1120,15 @@ body {
     .banner-btn {
         width: 100%;
         padding: 15px 0;
+        justify-content: center;
+    }
+
+    .community-btns {
+        justify-content: center;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 300px;
     }
 }
