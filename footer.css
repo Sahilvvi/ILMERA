@@ -70,7 +70,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  width: 42%;
+  width: 30%;
   height: 60px;
   background: var(--primary-color, #0096e6);
   transition: width 0.3s ease;
@@ -93,7 +93,7 @@
   transform: translateX(-50%);
   top: 15px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   z-index: 5;
 }
 
@@ -112,10 +112,30 @@
 }
 
 .footer-social a:hover {
-  background: #0099ff;
+  background: #25D366;
+  /* WhatsApp Green for all or keep blue? Let's use blue for consistency but maybe green for WA if I can target it */
   color: #fff;
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.3);
+}
+
+.footer-social a .fa-whatsapp:hover {
+  background: #25D366;
+}
+
+/* Let's actually add specific brand colors for icons */
+.footer-social a:hover .fa-facebook-f {
+  color: #fff;
+}
+
+.footer-social a:hover {
+  background: #0099ff;
+}
+
+/* Default hover blue */
+
+.footer-social a:has(.fa-whatsapp):hover {
+  background: #25D366;
 }
 
 /* thin grey line at very bottom - optional, maybe remove for cleaner look */
@@ -130,7 +150,7 @@
 
   .footer-bottom::before,
   .footer-bottom::after {
-    width: 38%;
+    width: 25%;
   }
 }
 

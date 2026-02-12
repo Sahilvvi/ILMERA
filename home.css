@@ -697,6 +697,25 @@ body {
     transform: translateY(-3px);
 }
 
+.community-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.wa-btn {
+    background: #25D366;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wa-btn:hover {
+    background: #128C7E;
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.3);
+}
+
 .banner-btn {
     margin-top: 25px;
     padding: 15px 45px;
