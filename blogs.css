@@ -384,7 +384,8 @@ body {
     }
 
     .featured-img-wrap {
-        height: 300px;
+        height: auto;
+        aspect-ratio: 16/9;
     }
 
     .blog-grid {

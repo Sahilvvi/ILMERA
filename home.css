@@ -359,10 +359,12 @@ body {
 
 /* Course Grid */
 .course-grid {
-    overflow: hidden;
-    /* Hide scrollbar */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
-    margin: 0 -20px;
+    margin: 0;
 }
 
 /* 3D Card Effect */
@@ -594,8 +596,7 @@ body {
 .main-img {
     width: 100%;
     max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    /* Removed card styling to suit transparent images */
 }
 
 .avatar {
@@ -887,6 +888,7 @@ body {
     position: relative;
     transition: 0.4s;
     border: 1px solid rgba(0, 0, 0, 0.03);
+    height: 100%;
 }
 
 .testimonial-card:hover {
@@ -996,7 +998,8 @@ body {
 
     .features {
         flex-direction: column;
-        margin: 40px 5%;
+        width: 90%;
+        margin: 40px auto;
         border-radius: 20px;
         padding: 40px 20px;
     }
@@ -1021,22 +1024,9 @@ body {
     }
 
     .course-grid {
-        overflow-x: auto;
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        padding-bottom: 30px;
-        margin: 0 -5%;
-        /* Pull closer to edge for slider feel */
-        padding-left: 5%;
-        /* Restore padding */
-        padding-right: 5%;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .course-grid::-webkit-scrollbar {
-        display: none;
+        /* Default to wrapping flex container from global styles */
+        padding: 0;
+        margin: 0;
     }
 
     .course-card {
@@ -1098,6 +1088,11 @@ body {
 @media (max-width: 576px) {
     .hero-left h1 {
         font-size: 32px;
+    }
+
+    .highlight::after {
+        height: 6px;
+        bottom: 2px;
     }
 
     .text-area h2,
