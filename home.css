@@ -823,6 +823,12 @@ body {
     transform: scale(1.2);
 }
 
+/* Fix for first blog image sizing if it appears smaller */
+.blog-container .blog-card:first-child .blog-img {
+    transform: scale(1.5);
+    transform-origin: top center;
+}
+
 /* RESPONSIVE FIXES FOR BLOG */
 @media (max-width: 991px) {
     .blog-container {
@@ -1031,7 +1037,7 @@ body {
     }
 
     .course-card {
-        min-width: 280px;
+        min-width: 100%;
         /* Smaller min-width for mobile */
     }
 

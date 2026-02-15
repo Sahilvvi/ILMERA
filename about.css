@@ -480,6 +480,7 @@ body {
     color: white;
     transform: rotateY(180deg);
     z-index: 1;
+    overflow-y: auto;
 }
 
 /* Social Icons on Back */
