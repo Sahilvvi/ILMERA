@@ -24,6 +24,11 @@
     scroll-behavior: smooth;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -825,7 +830,7 @@ body {
 
 /* Fix for first blog image sizing if it appears smaller */
 .blog-container .blog-card:first-child .blog-img {
-    transform: scale(1.5);
+    transform: scale(1.7);
     transform-origin: top center;
 }
 
@@ -1094,7 +1099,7 @@ body {
 
 @media (max-width: 576px) {
     .hero-left h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .highlight::after {
@@ -1105,16 +1110,17 @@ body {
     .text-area h2,
     .title,
     .blog-header h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .banner-content h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .hero {
         padding-left: 5%;
         padding-right: 5%;
+        min-height: auto;
     }
 
     .cta-btn,
@@ -1126,11 +1132,38 @@ body {
     }
 
     .community-btns {
+        flex-direction: column;
+        gap: 15px;
         justify-content: center;
     }
 
-    .about-img {
+    .about-img,
+    .main-img {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .features {
+        width: 95%;
+        margin: 30px auto;
+        padding: 30px 15px;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .course-card {
+        min-width: 100%;
+    }
+
+    .partners-grid {
+        gap: 20px;
+    }
+
+    .partners-grid img {
+        height: 25px;
     }
 }

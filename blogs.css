@@ -238,6 +238,12 @@ body {
     transform: translateY(-10px);
 }
 
+/* Fix for featured blog image if it has padding */
+.featured-card .featured-img-wrap img {
+    transform: scale(1.7);
+    transform-origin: top center;
+}
+
 .featured-img-wrap {
     height: 400px;
     overflow: hidden;
@@ -295,6 +301,12 @@ body {
 .blog-card:hover {
     transform: translateY(-15px);
     box-shadow: var(--hover-shadow);
+}
+
+/* Fix for first blog image having internal padding - Scale it up */
+.blog-grid .blog-card:first-child .blog-thumb img {
+    transform: scale(1.7);
+    transform-origin: top center;
 }
 
 .blog-thumb {
